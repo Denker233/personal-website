@@ -1,0 +1,75 @@
+<!DOCTYPE	html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <title>Event Input Form</title>
+      <link rel="stylesheet" href="MyForm.css">
+      <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+      <script src="myForm.js"></script>
+   </head>
+   <body>
+    <nav>
+        <a href="mySchedule.html">My Schedule</a>
+        <a href="AboutMe.html">AboutMe</a>
+        <a href="MyForm.html">MyForm</a>
+    </nav>
+      <form id="tosForm"  action="https://www-users.cselabs.umn.edu/~cuixx327/a2.php" method="POST">
+         <div>
+            <table>
+                <tr>
+                    <th><label for="event">Event</label></th>
+                    <th><input type="text" name="event" id="event" required pattern="[a-zA-Z0-9]+" title="Input must be alphanumeric"></th>
+                </tr>
+                <tr>
+                    <th><label for="day">Days of Week</label></th>
+                    <th><select name="day" id="day">
+                        <option value="Sun">Sun</option>
+                        <option value="Mon">Mon</option>
+                        <option value="Tue">Tue</option>
+                        <option value="Wed">Wed</option>
+                        <option value="Thu">Thu</option>
+                        <option value="Fri">Fri</option>
+                        <option value="Sat">Sat</option>
+                    </select></th>
+                </tr>
+                <tr>
+                    <th> <label for="start">Start</label></th>
+                    <th><input type="text" name="start" id="start" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" required placeholder="--:-- --"></th>
+                </tr>
+                <tr>
+                    <th><label for="end">End</label></th>
+                    <th><input type="text" name="end" id="end" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" required placeholder="--:-- --"></th>
+                </tr>
+                <tr>
+                    <th><label for="phone">Phone</label></th>
+                    <th><input type="text" name="phone" id="phone"  pattern="\d{3}-\d{3}-\d{4}" required placeholder="xxx-xxx-xxxx"></th>
+                </tr>
+                <tr>
+                    <th><label for="location">Location</label></th>
+                    <th><input type="text" name="location" id="location" required></th>
+                </tr>
+                <tr>
+                    <th> <label for="extra">Extra Info</label></th>
+                    <th><input type="text" name="extra" id="extra" required></th>
+                </tr>
+                <tr>
+                    <th><label for="url">Enter URL for the Extra Info</label></th>
+                    <th><input type="url" name="url" id="url" required ></th>
+                </tr>
+                <tr>
+                    <th>
+
+                    </th>
+                    <th><input type="submit" value="Submit"></th>
+                </tr>
+            </table>
+            
+        </div>
+        
+      </form>
+      <div id="map"></div>
+      <script type="text/javascript" src=
+      "https://maps.googleapis.com/maps/api/js?key=AIzaSyCKV_ZWS2vXsELohIbIxE_Liqf0msc0W2U&libraries=places&callback=initMap" async defer></script>
+      
+   </body>
+</html>

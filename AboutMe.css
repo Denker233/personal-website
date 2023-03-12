@@ -1,0 +1,61 @@
+nav{
+    background-color:rgb(51, 47, 119);
+    overflow: hidden;
+    
+}
+
+nav>a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 1px solid black;
+}
+table{
+    width:600px;
+}
+
+body div{
+    border: solid;
+    width: fit-content;
+    
+}
+
+body p {
+    text-align: center;
+}
+
+*{
+    box-sizing:border-box
+}
+.fav{
+    display: flex;
+}
+
+
+.child iframe{
+    border:0;
+    margin-top: auto;
+}
+
+#datecal {
+    position: absolute;
+    right:0px;
+    top:120px;
+    height: 200px;
+    background-color: greenyellow;
+}
+
+#cat{
+    position: absolute;
+    right:0px;
+    bottom:30px;
+    height: 400px;
+}
+

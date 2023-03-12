@@ -1,0 +1,30 @@
+nav{
+    background-color:rgb(51, 47, 119);
+    overflow: hidden;
+    
+}
+
+nav>a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+div > table, th, td {
+    border: 1px solid ;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:aliceblue
+}
+
+#map{
+    position: absolute;
+    display: flex;
+    height: 300px;
+    width:400px;
+    top:60px;
+    right:50px;
+}
